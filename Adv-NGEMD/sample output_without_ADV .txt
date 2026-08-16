@@ -1,0 +1,12 @@
+Using device: cpu
+Loading image from: /content/drive/MyDrive/Steganalysis_Project/Paper3_Test/Yenet_adv_pgd/adv_4.pgm
+Image tensor shape: torch.Size([1, 3, 512, 512])
+Loading model...
+
+Classification Results:
+Cover probability: 0.0000
+Stego probability: 1.0000
+
+Final prediction: Stego
+
+Results: {'cover_prob': 1.7681023312121624e-10, 'stego_prob': 1.0, 'prediction': 'Stego'}

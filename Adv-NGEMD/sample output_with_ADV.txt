@@ -1,0 +1,13 @@
+Initial prediction - Cover: 0.0000, Stego: 1.0000
+
+Starting adversarial attack...
+
+Final prediction - Cover: 0.0000, Stego: 1.0000
+Attack failed: The adversarial image is still classified as stego.
+
+Total Pixel Changes: 56895
+Attack Pattern (First 10 changes): [(22, 384, 0, -0.004999995), (22, 384, 1, -0.004999995), (22, 384, 2, -0.004999995), (23, 384, 0, 0.004999995), (23, 384, 1, 0.004999995), (23, 384, 2, 0.004999995), (24, 163, 0, -0.004999995), (24, 163, 1, -0.004999995), (24, 163, 2, -0.004999995), (24, 164, 0, 0.004999995)]
+stego_img_channel: 3
+Saved adversarial image at: /content/drive/MyDrive/Steganalysis_Project/Paper3_Test/Yenet_adv_pgd/adv_7.pgm
+Saved attack pattern at: /content/drive/MyDrive/Steganalysis_Project/Paper3_Test/Yenet_adv_pgd/attack_pattern.pkl
+

@@ -1,0 +1,58 @@
+clc;
+clear all;
+close all;
+
+x=[];
+y=[1.6376
+2.3774];
+%xi = [x(1):0.0000001:x(end)];
+%vid=interp1(x,y,xi,'pchip');
+%figure;
+%
+x_emd=[0.86];
+y_emd=[2.9];
+
+
+x_femd=[1];
+y_femd=[1];
+
+x_de=[0.54];
+y_de=[1.85];
+
+x_hemd=[0.632];
+y_hemd=[1.58];
+
+
+x_appm=[0.5];
+y_appm=[1.33];
+
+
+x_2F=[0.4];
+y_2F=[1];
+
+figure;
+
+plot(x,y,'r', LineWidth=3)
+hold on
+
+plot(x_emd, y_emd, '--gs', 'Color', 'green','MarkerSize',10,LineWidth=2);
+plot(x_femd, y_femd, '.', 'Color', 'black','MarkerSize',10,LineWidth=2);
+plot(x_de, y_de, 'o', 'Color', 'yellow','MarkerSize',10,LineWidth=2);
+
+
+plot(x_hemd,y_hemd,'s','Color','#EE82EE','MarkerSize',10,LineWidth=2);
+plot(x_appm,y_appm,'|','Color','#708090','MarkerSize',10,LineWidth=2);
+plot(x_2F,y_2F,'*','Color','#006400','MarkerSize',10,LineWidth=2);
+
+xlabel('Invers Payload','FontSize',13,FontWeight='bold');
+ylabel('Efficiency','FontSize',13,FontWeight='bold');
+
+% Create a legend
+legend({'ProposedMethod', 'EMD', 'FEMD', 'DE', 'HEMD',  'APPM', '2-Functions', },'FontSize',12,'FontWeight','bold');
+
+% Save the figure
+saveas(gcf, 'myfig.png', 'png');
+
+% Display the figure
+hold off;
+%}
